@@ -1,177 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../dist/output.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- Présentation -->
-    <section
-      class="header h-screen border-b border-b-black bg-slate-200 flex flex-col grow-0"
-    >
-      <div class="flex justify-center pt-10 mx-5 font-lato">
-        <img src="./images/picture.png" alt="Photo" class="w-72" />
-        <div class="flex flex-col ml-4">
-          <h1
-            data-aos="fade-down-right"
-            data-aos-duration="1000"
-            class="text-5xl mt-2"
-          >
-            Nicolas D'Addabbo
-          </h1>
-          <h2 class="text-3xl">Développeur Full Stack</h2>
-          <p class="mt-5 font-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-            perspiciatis quia dolorum porro qui deleniti vitae ad optio, alias
-            atque, illo laudantium corrupti blanditiis fuga iusto rerum maxime.
-            Quibusdam accusamus sunt veritatis minima odit. Aspernatur, illum
-            sunt laborum error quisquam aut facere quas mollitia, molestias fuga
-            asperiores assumenda ad? Voluptatem.
-          </p>
-        </div>
-      </div>
-      <div class="mt-10 pt-5 w-full flex h-screen bg-black text-white">
-        <div
-          class="w-72 border-r border-r-black flex-1 flex flex-col items-center"
-        >
-          <h2 class="text-4xl font-lato font-bold text-center">Soft Skills</h2>
-          <ul
-            class="font-lato text-3xl mt-5 list-image-[url(../public/images/check.png)]"
-          >
-            <li class="my-10">Rigoureux</li>
-            <li class="my-10">À l'écoute</li>
-            <li class="my-10">Respectueux</li>
-          </ul>
-        </div>
-        <div
-          class="w-72 border-r border-r-black flex-1 flex flex-col items-center"
-        >
-          <h2 class="text-4xl font-lato font-bold text-center">Loisirs</h2>
-          <div class="font-lato grid grid-cols-3 text-3xl mt-5">
-            <div class="my-10 flex items-center gap-1">
-              <img src="./images/walk.png" alt="" class="h-5 w-5" />
-              <span> Marche </span>
-            </div>
-            <div class="my-10 flex items-center gap-1">
-              <img src="./images/running-man.png" alt="" class="h-5 w-5" />
-              <span> Course </span>
-            </div>
-            <div class="my-10 flex items-center gap-1">
-              <img
-                src="./images/weightlifter-frontal-silhouette.png"
-                alt=""
-                class="h-5 w-5"
-              />
-              <span> Musculation </span>
-            </div>
-            <div class="my-10 flex items-center gap-1">
-              <img src="./images/restaurant.png" alt="" class="h-5 w-5" />
-              <span> Nutrition </span>
-            </div>
-            <div class="my-10 flex items-center gap-1">
-              <img src="./images/comic.png" alt="" class="h-5 w-5" />
-              <span> Manga </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-72 border-r border-r-black flex-1 flex flex-col items-center"
-        >
-          <h2 class="text-4xl font-lato font-bold text-center">Informations</h2>
-          <ul class="font-lato text-3xl mt-5">
-            <li class="my-10">
-              <img
-                src="/public/images/linkedin.png"
-                alt="Linkedin"
-                class="w-10 inline"
-              />
-              <a href=""> Linkedin </a>
-            </li>
-            <li class="my-10">
-              <img
-                src="/public/images/logo-github.png"
-                alt="Linkedin"
-                class="w-10 inline"
-              />
-              <a href=""> Github </a>
-            </li>
-            <li class="my-10">
-              <img
-                src="/public/images/gestion-de-projet.png"
-                alt="Linkedin"
-                class="w-10 inline"
-              />
-              <a href=""> Quelques projets </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Connaissances -->
-    </section>
-    <section
-      class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center"
-    >
-      <div class="bg-javascript w-72">
-        <img src="/public//images/js2.png" alt="Javascript logo" />
-      </div>
-      <div class="bg-typescript w-72">
-        <img src="/public/images/ts.png" alt="Typescript logo" class="" />
-      </div>
-      <div class="w-72">
-        <img src="/public/images/CSharpLogo.png" alt="C Sharp logo" class="" />
-      </div>
-      <div class="bg-black w-72">
-        <img src="/public/images/angular.svg" alt="Angular logo" class="w-72" />
-      </div>
-      <div class="bg-white w-72">
-        <img src="/public/images/react.png" alt="React logo" class="w-72" />
-      </div>
-      <div class="bg-black w-72">
-        <img
-          src="/public/images/node.svg"
-          alt="Node js logo"
-          class="w-72 pt-10"
-        />
-      </div>
-      <div class="bg-black w-72">
-        <img
-          src="/public/images/adonisjs.svg"
-          alt="C Sharp logo"
-          class="w-72 pt-10"
-        />
-      </div>
-      <div class="bg-black w-72">
-        <img
-          src="/public/images/docker.svg"
-          alt="C Sharp logo"
-          class="w-72 pt-10"
-        />
-      </div>
-    </section>
-    <!-- Expérience -->
-    <section class="h-96 border-b border-b-black">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- Présentation -->
+  <section
+  class="header h-screen  bg-slate-200 flex flex-col grow-0"
+  >
+  <!-- Nom - prénom - âge - résumé -->
+  <div class="flex justify-center pt-10 mx-5 font-lato">
+    <img src="./images/picture.png" alt="Photo" class="w-72" />
+    <div class="flex flex-col ml-4">
       <h1
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        class="text-5xl mt-2 ml-2 font-lato font-bold"
+      data-aos="fade-down-right"
+      data-aos-duration="1000"
+      class="text-5xl mt-2"
       >
-        Exprériences
-      </h1>
-    </section>
+      Nicolas D'Addabbo
+    </h1>
+    <h2 class="text-3xl">
+      24 ans Développeur Full Stack</span>
+    </h2>
+    <p class="mt-5 font-xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+      perspiciatis quia dolorum porro qui deleniti vitae ad optio, alias
+      atque, illo laudantium corrupti blanditiis fuga iusto rerum maxime.
+      Quibusdam accusamus sunt veritatis minima odit. Aspernatur, illum
+      sunt laborum error quisquam aut facere quas mollitia, molestias fuga
+      asperiores assumenda ad? Voluptatem.
+    </p>
+  </div>
+</div>
 
-    <!-- Projects -->
-    <section class="h-96 border-b border-b-black">
-      <h1
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        class="text-5xl mt-2 ml-2 font-lato font-bold"
-      >
-        Mes projets
-      </h1>
-    </section>
+<!-- Soft skills - loisirs - informations -->
+<div class="mt-10 pt-5 w-full flex h-screen bg-black text-white">
+  <!-- Soft skills -->
+  <div
+  class="w-72 border-r border-r-black flex-1 flex flex-col items-center soft-skills"
+  >
+</div>
 
-    <script src="../dist/app-bundle.js"></script>
-  </body>
+<!-- Loisirs -->
+<div
+class="w-72 flex-1 flex flex-col items-center hobbies"
+>
+</div>
+
+<!-- Informations -->
+<div
+class="w-72 flex-1 flex flex-col items-center informations"
+>
+
+</div>
+</div>
+</section>
+
+<!-- Connaissances -->
+<section
+class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center"
+>
+<div data-aos="fade-up" class="bg-javascript w-72">
+  <img src="/public//images/js2.png" alt="Javascript logo" />
+</div>
+<div data-aos="fade-down" class="bg-typescript w-72">
+  <img src="/public/images/ts.png" alt="Typescript logo" class="" />
+</div>
+<div data-aos="fade-up" class="w-72">
+  <img src="/public/images/CSharpLogo.png" alt="C Sharp logo" class="" />
+</div>
+<div data-aos="fade-down" class="bg-black w-72">
+  <img src="/public/images/angular.svg" alt="Angular logo" class="w-72" />
+</div>
+<div data-aos="fade-up" class="bg-white w-72">
+  <img src="/public/images/react.png" alt="React logo" class="w-72" />
+</div>
+<div data-aos="fade-down" class="bg-black w-72">
+  <img
+  src="/public/images/node.svg"
+  alt="Node js logo"
+  class="w-72 pt-10"
+  />
+</div>
+<div data-aos="fade-up" class="bg-black w-72">
+  <img
+  src="/public/images/adonisjs.svg"
+  alt="C Sharp logo"
+  class="w-72 pt-10"
+  />
+</div>
+<div data-aos="fade-down" class="bg-black w-72">
+  <img
+  src="/public/images/docker.svg"
+  alt="C Sharp logo"
+  class="w-72 pt-10"
+  />
+</div>
+</section>
+<!-- Compétences -->
+<section class="skills-section relative border-b bg-black text-4xl flex flex-wrap flex-grow">
+
+</section>
+
+<!-- Expérience -->
+<section class="h-96 border-b border-b-black">
+  <h1
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  class="text-5xl mt-2 ml-2 font-lato font-bold"
+  >
+  Expériences
+</h1>
+</section>
+
+<!-- Formations -->
+<section class="h-96 border-b border-b-black">
+  <h1
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  class="text-5xl mt-2 ml-2 font-lato font-bold"
+  >
+  Formations
+</h1>
+</section>
+
+<!-- Projects -->
+<section class="h-96 border-b border-b-black">
+  <h1
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  class="text-5xl mt-2 ml-2 font-lato font-bold"
+  >
+  Mes projets
+</h1>
+</section>
+
+<script src="../dist/app-bundle.js"></script>
+</body>
 </html>

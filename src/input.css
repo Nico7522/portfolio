@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.moveTransition{
+    animation: move 0.5s ;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
