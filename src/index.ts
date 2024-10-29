@@ -139,7 +139,7 @@ LanguagesSkillsData.forEach((s) => {
   titleDiv.appendChild(title);
 
   const listDiv = document.createElement("div");
-  listDiv.classList.add("flex", "flex-col", "ml-5", "flex-wrap");
+  listDiv.classList.add("flex", "flex-col", "ml-5", "min-h-72", "flex-wrap");
   const exp = document.createElement("p");
   exp.classList.add("text-2xl", "font-bold");
   exp.innerText = `Exp: ${s.exp} ans`;
@@ -161,15 +161,22 @@ LanguagesSkillsData.forEach((s) => {
   wrapperDiv.appendChild(titleDiv);
   wrapperDiv.appendChild(listDiv);
 
-  const btn = createAnimatedButton();
-  listDiv.appendChild(btn);
+  const btn = createAnimatedButton("Voir en détail");
+  wrapperDiv.appendChild(btn);
+
+  btn.addEventListener("click", () => {
+    createModal(s.skillsList);
+  });
 });
 
 const jsSkills = document.querySelectorAll(".js-skills > li");
 jsSkills.forEach((li) => li.classList.add("text-xl", "italic"));
 
-const btn = document.querySelector("button");
-function createAnimatedButton(): HTMLButtonElement {
+const btn = document.querySelectorAll("button");
+function createAnimatedButton(
+  text: string,
+  bgColor?: string
+): HTMLButtonElement {
   const btn = document.createElement("button");
   const span = document.createElement("span");
   const textSpan = document.createElement("span");
@@ -181,7 +188,7 @@ function createAnimatedButton(): HTMLButtonElement {
     "text-sm",
     "group",
     "relative",
-    "bg-black",
+    bgColor || "bg-black",
     "overflow-hidden",
     "flex",
     "justify-center",
@@ -205,7 +212,7 @@ function createAnimatedButton(): HTMLButtonElement {
     "group-hover:-translate-x-48",
     "ease"
   );
-  textSpan.innerText = "Voir en détail";
+  textSpan.innerText = text;
 
   btn.appendChild(span);
   btn.appendChild(textSpan);
@@ -213,24 +220,37 @@ function createAnimatedButton(): HTMLButtonElement {
   return btn;
 }
 
-// Events istener
-
-btn?.addEventListener("click", () => {
+function createModal(skills: string[]) {
+  const isDivExist = document.querySelector(
+    ".moveTransition"
+  ) as HTMLDivElement | null;
+  isDivExist?.remove();
   const div = document.createElement("div");
   div.classList.add(
     "w-96",
-    "h-96",
-    "bg-black",
+    "bg-white",
     "text-white",
     "absolute",
-    "top-1/2",
     "left-1/2",
-    "transform",
     "-translate-x-1/2",
     "-translate-y-1/2",
-    "transition-all",
     "shadow-xl",
-    "moveTransition"
+    "moveTransition",
+    "pb-5"
   );
   skillSection.appendChild(div);
-});
+
+  const ul = document.createElement("ul");
+  ul.classList.add("text-black", "text-xl", "list-disc", "my-10", "mx-12");
+  div.appendChild(ul);
+  skills.forEach((s) => {
+    const li = document.createElement("li");
+    li.innerText = s;
+
+    ul.appendChild(li);
+  });
+  const btnClose = createAnimatedButton("Fermé", "bg-red-500");
+  div.appendChild(btnClose);
+
+  btnClose.addEventListener("click", () => div.remove());
+}
