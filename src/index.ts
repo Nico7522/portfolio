@@ -6,7 +6,7 @@ import { InformationsData } from "./data/informations";
 import { LanguagesSkillsData } from "./data/languages_skills";
 
 AOS.init();
-const body = document.querySelector("body") as HTMLBodyElement;
+const section = document.querySelectorAll("section");
 // Ajout du titre et de la liste des soft skills
 
 const softSkill = document.querySelector(".soft-skills") as HTMLDivElement;
@@ -124,8 +124,11 @@ LanguagesSkillsData.forEach((s) => {
     "flex-col"
   );
 
+  wrapperDiv.setAttribute("data-aos", "flip-left");
+  wrapperDiv.setAttribute("data-aos-once", "true");
+
   const titleDiv = document.createElement("div");
-  titleDiv.classList.add("flex", "justify-center");
+  titleDiv.classList.add("flex", "justify-center", "my-3");
 
   const logo = document.createElement("img");
   logo.classList.add("w-6", "h-6", "mt-2");
@@ -139,9 +142,9 @@ LanguagesSkillsData.forEach((s) => {
   titleDiv.appendChild(title);
 
   const listDiv = document.createElement("div");
-  listDiv.classList.add("flex", "flex-col", "ml-5", "min-h-72", "flex-wrap");
+  listDiv.classList.add("flex", "flex-col", "ml-5", "min-h-60", "flex-wrap");
   const exp = document.createElement("p");
-  exp.classList.add("text-2xl", "font-bold");
+  exp.classList.add("text-2xl", "font-bold", "mb-2");
   exp.innerText = `Exp: ${s.exp} ans`;
   listDiv.appendChild(exp);
 
@@ -162,17 +165,19 @@ LanguagesSkillsData.forEach((s) => {
   wrapperDiv.appendChild(listDiv);
 
   const btn = createAnimatedButton("Voir en détail");
+  btn.classList.add("mb-2");
   wrapperDiv.appendChild(btn);
 
   btn.addEventListener("click", () => {
-    createModal(s.skillsList);
+    createModal(s.skillsList, s.title, s.imageLogoPath);
   });
 });
 
 const jsSkills = document.querySelectorAll(".js-skills > li");
 jsSkills.forEach((li) => li.classList.add("text-xl", "italic"));
 
-const btn = document.querySelectorAll("button");
+// Fonctions
+
 function createAnimatedButton(
   text: string,
   bgColor?: string
@@ -220,26 +225,64 @@ function createAnimatedButton(
   return btn;
 }
 
-function createModal(skills: string[]) {
+function createModal(skills: string[], title: string, logoImgPath: string) {
   const isDivExist = document.querySelector(
     ".moveTransition"
   ) as HTMLDivElement | null;
   isDivExist?.remove();
+  const bgDiv = document.createElement("div");
+  bgDiv.classList.add(
+    "fixed",
+    "inset-0",
+    "left-0",
+    "w-full",
+    "h-full",
+    "bg-black",
+    "top-0",
+    "opacity-70"
+  );
+  skillSection.appendChild(bgDiv);
   const div = document.createElement("div");
   div.classList.add(
-    "w-96",
-    "bg-white",
-    "text-white",
-    "absolute",
-    "left-1/2",
-    "-translate-x-1/2",
-    "-translate-y-1/2",
+    "bg-slate-200",
+    "fixed",
+    "inset-0",
+    "left-0",
+    "top-0",
+    "w-[600px]",
+    "h-[600px]",
+    "m-auto",
+    "rounded-lg",
     "shadow-xl",
-    "moveTransition",
-    "pb-5"
+    "modalAppear",
+    "flex",
+    "flex-col",
+    "justify-between"
   );
   skillSection.appendChild(div);
-
+  const logo = document.createElement("img");
+  logo.src = logoImgPath;
+  logo.classList.add("w-6", "h-6");
+  const h2 = document.createElement("h2");
+  h2.classList.add(
+    "font-lato",
+    "text-3xl",
+    "text-center",
+    "font-bold",
+    "text-black"
+  );
+  const titleDiv = document.createElement("div");
+  titleDiv.classList.add(
+    "flex",
+    "items-center",
+    "justify-center",
+    "gap-1",
+    "mt-5"
+  );
+  h2.innerHTML = title;
+  titleDiv.appendChild(logo);
+  titleDiv.appendChild(h2);
+  div.appendChild(titleDiv);
   const ul = document.createElement("ul");
   ul.classList.add("text-black", "text-xl", "list-disc", "my-10", "mx-12");
   div.appendChild(ul);
@@ -249,8 +292,17 @@ function createModal(skills: string[]) {
 
     ul.appendChild(li);
   });
-  const btnClose = createAnimatedButton("Fermé", "bg-red-500");
+
+  const detailsDiv = document.createElement("div");
+
+  detailsDiv.classList.add("mx-20", "text-lg", "break-words");
+  detailsDiv.innerText =
+    "dsfdsfsfsdfdsfffffffffffffffffffffffffffffffffffffffffffffsdfsdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsd";
+  div.appendChild(detailsDiv);
+  const btnClose = createAnimatedButton("Fermer", "bg-red-500");
   div.appendChild(btnClose);
 
-  btnClose.addEventListener("click", () => div.remove());
+  btnClose.addEventListener("click", () => {
+    div.remove(), bgDiv.remove();
+  });
 }
