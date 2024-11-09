@@ -19,6 +19,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Gestion des Erreurs",
       "Utilisation de APIs natives du Navigateur",
     ],
+    details:
+      "Étant le principal langage que j'utilise dans mes projets, je maîtrise plus ou moins bien ces différentes compétences en JavaScript, bien qu'étant moins bon sur certains points, celà me permet tout de même d'ajouter l'interactivité souhaitée dans mes projets",
   },
   {
     title: "Typescript",
@@ -38,6 +40,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Décorateurs",
       "Maîtrise des Types Utilitaires",
     ],
+    details:
+      "J'utilise TypeScript pour renforcer la fiabilité et la clarté du code dans mes projets. La couche qu'il apporte au JS me permet d'allez plus vite en évirant certaines erreurs. C'est un language que j'aime énormément. C'est un plaisir d'essayer chaque jour de m'améliorer notamment en l'utilisant avec Angular ou React.",
   },
   {
     title: "C# / .NET",
@@ -52,6 +56,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Dapper",
       "Web Socket (SignalR)",
     ],
+    details:
+      "La création d'API en C# est ma principale compétence en .NET. J'aime beaucoup utiliser Entity Framework et toutes les possibilités que ce Framework offre. Combinez EF avec du CQRS est devenu un de mes nouveaux passe temps.",
   },
   {
     title: "Angular",
@@ -68,6 +74,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Angular Material",
       "Prime NG",
     ],
+    details:
+      "Angular est le Framework avec lequel j'ai le plus travaillé jusqu'à présent. J'ai une bonne maitrîse du Rxjs, prennant une place importante au sein d'Angular, j'y accorde beaucoup d'importance. J'essaie constamment de m'améliorer et de l'utiliser de la manière la plus optimisée possible. J'ai ensuite beaucoup utiliser les librairies Angular Material et Prime NG. Enfin je m'informe beaucoup sur les nouveautés, et je garde particulièrement un oeil sur les signals, qui selon moi vont prendre une place importante.",
   },
   {
     title: "React",
@@ -83,6 +91,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Context API",
       "Redux",
     ],
+    details:
+      "J'ai beaucoup travaillé avec React, d'abord en JS puis en TS. Et je trouve que React et Typescript vont très bien ensemble. J'ai une bonne maîtrise des Hooks en général, de la gestion des formulaires avec React Hook Form et de Redux pour les plus grosses applications.",
   },
   {
     title: "Node JS",
@@ -103,6 +113,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Environnements et Variables d'Environnement",
       "Accès aux Bases de Données",
     ],
+    details:
+      "Node est à la base de presque tous les outils que j'utilise. De ce fait, j'ai trouvé important de s'y intérésser et d'apprendre les bases. En plus, je me suis pas mal penché sur la gestion des packages avec NPM (PNPM), ainsi que comment un projet peut se découper en 'module'.",
   },
   {
     title: "Adonis JS",
@@ -118,6 +130,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Vine JS",
       "Creation d'API",
     ],
+    details:
+      "Adonis est un framework servant à créer des projets Web et des API. J'ai pu tester pas mal de points différents comment la crétion d'une simple API, un projet MVC, un projet SSR avec Inertia/React. Celà m'a permis de maitrîser les bases du framework et plus encore.",
   },
   {
     title: "Docker",
@@ -135,6 +149,8 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Docker Compose",
       "Environnements de Développement et Variables d'Environnement",
     ],
+    details:
+      "Je n'ai pas énormément d'expérience avec Docker mais je connais très bien les bases citées dans la liste. Ces compétences me permettent de pouvoir 'dockeriser' n'importe lequel de mes projets Node ou .NET.",
   },
   {
     title: "Informatiques",
@@ -152,5 +168,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
       "Machine virtuelle",
       "Sécurité",
     ],
+    details:
+      "J'ai depuis très jeune été passionné par l'informatique. Avant de me lancer dans le développement, j'ai suivi deux années d'études en informatique. Ces deux années m'auront permis d'apprendre le fonctionnement détaillé d'un ordinateur, le fonctionnement des réseaux, l'adressage d'ip...",
   },
 ];

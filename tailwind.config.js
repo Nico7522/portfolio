@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         'lato': ['Lato', 'sans-serif'],
+        "gotham": ['Gotham Book', "sans-serif"]
       }
     },
     plugins: [],

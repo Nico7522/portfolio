@@ -4,4 +4,5 @@ export type LanguageSkill = {
   bgColor: string;
   exp: number;
   skillsList: string[];
+  details: string;
 };

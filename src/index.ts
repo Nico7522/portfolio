@@ -6,7 +6,7 @@ import { InformationsData } from "./data/informations";
 import { LanguagesSkillsData } from "./data/languages_skills";
 
 AOS.init();
-const section = document.querySelectorAll("section");
+const body = document.querySelector("body");
 // Ajout du titre et de la liste des soft skills
 
 const softSkill = document.querySelector(".soft-skills") as HTMLDivElement;
@@ -124,9 +124,6 @@ LanguagesSkillsData.forEach((s) => {
     "flex-col"
   );
 
-  wrapperDiv.setAttribute("data-aos", "flip-left");
-  wrapperDiv.setAttribute("data-aos-once", "true");
-
   const titleDiv = document.createElement("div");
   titleDiv.classList.add("flex", "justify-center", "my-3");
 
@@ -169,7 +166,7 @@ LanguagesSkillsData.forEach((s) => {
   wrapperDiv.appendChild(btn);
 
   btn.addEventListener("click", () => {
-    createModal(s.skillsList, s.title, s.imageLogoPath);
+    createModal(s.skillsList, s.title, s.imageLogoPath, s.details);
   });
 });
 
@@ -225,11 +222,17 @@ function createAnimatedButton(
   return btn;
 }
 
-function createModal(skills: string[], title: string, logoImgPath: string) {
+function createModal(
+  skills: string[],
+  title: string,
+  logoImgPath: string,
+  details: string
+) {
   const isDivExist = document.querySelector(
     ".moveTransition"
   ) as HTMLDivElement | null;
   isDivExist?.remove();
+  body?.classList.add("overflow-hidden");
   const bgDiv = document.createElement("div");
   bgDiv.classList.add(
     "fixed",
@@ -257,7 +260,7 @@ function createModal(skills: string[], title: string, logoImgPath: string) {
     "modalAppear",
     "flex",
     "flex-col",
-    "justify-between"
+    "z-10"
   );
   skillSection.appendChild(div);
   const logo = document.createElement("img");
@@ -284,7 +287,14 @@ function createModal(skills: string[], title: string, logoImgPath: string) {
   titleDiv.appendChild(h2);
   div.appendChild(titleDiv);
   const ul = document.createElement("ul");
-  ul.classList.add("text-black", "text-xl", "list-disc", "my-10", "mx-12");
+  ul.classList.add(
+    "text-black",
+    "text-xl",
+    "list-disc",
+    "mt-10",
+    "mb-5",
+    "mx-12"
+  );
   div.appendChild(ul);
   skills.forEach((s) => {
     const li = document.createElement("li");
@@ -295,14 +305,22 @@ function createModal(skills: string[], title: string, logoImgPath: string) {
 
   const detailsDiv = document.createElement("div");
 
-  detailsDiv.classList.add("mx-20", "text-lg", "break-words");
-  detailsDiv.innerText =
-    "dsfdsfsfsdfdsfffffffffffffffffffffffffffffffffffffffffffffsdfsdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsd";
+  detailsDiv.classList.add(
+    "mx-20",
+    "mb-5",
+    "text-lg",
+    "break-words",
+    "font-gotham",
+    "text-sm",
+    "italic"
+  );
+  detailsDiv.innerText = details;
+
   div.appendChild(detailsDiv);
   const btnClose = createAnimatedButton("Fermer", "bg-red-500");
   div.appendChild(btnClose);
 
   btnClose.addEventListener("click", () => {
-    div.remove(), bgDiv.remove();
+    div.remove(), bgDiv.remove(), body?.classList.remove("overflow-hidden");
   });
 }
