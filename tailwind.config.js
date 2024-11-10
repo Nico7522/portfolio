@@ -10,6 +10,7 @@ module.exports = {
           'javascript': '#f0db4f',
           'csharp': '#68217A'
         },
+     
       },
       fontFamily: {
         'lato': ['Lato', 'sans-serif'],
