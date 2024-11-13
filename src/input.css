@@ -116,9 +116,8 @@ a {
 .bs:after {
     content: ' ';
     position: absolute;
-    top: 40%;
-    right: -30px;
+    right: -10px;
     width: 20px;
-    height: 5px;
+    height: 2px;
     background: white;
 }
