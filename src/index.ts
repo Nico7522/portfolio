@@ -146,7 +146,7 @@ LanguagesSkillsData.forEach((s) => {
   listDiv.appendChild(exp);
 
   const skillsList = document.createElement("ul");
-  skillsList.classList.add("ml-5", "list-disc", "text-start", "js-skills");
+  skillsList.classList.add("ml-5", "list-disc", "text-start", "skills");
   listDiv.appendChild(skillsList);
 
   s.skillsList.slice(0, 4).forEach((skill, index) => {
@@ -170,8 +170,8 @@ LanguagesSkillsData.forEach((s) => {
   });
 });
 
-const jsSkills = document.querySelectorAll(".js-skills > li");
-jsSkills.forEach((li) => li.classList.add("text-xl", "italic"));
+const jsSkills = document.querySelectorAll(".skills > li");
+jsSkills.forEach((li) => li.classList.add("text-xl"));
 
 // Fonctions
 
@@ -253,7 +253,7 @@ function createModal(
     "left-0",
     "top-0",
     "w-[600px]",
-    "h-[600px]",
+    "h-[620px]",
     "m-auto",
     "rounded-lg",
     "shadow-xl",
