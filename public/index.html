@@ -6,24 +6,24 @@
   <link rel="stylesheet" href="../dist/output.css" />
   <title>Portfolio</title>
 </head>
-<body >
+<body class="" >
   <!-- Présentation -->
   <section
-  class="header h-screen  bg-slate-200 flex flex-col grow-0"
+  class="header  bg-slate-200 flex flex-col grow-0"
   >
   <!-- Nom - prénom - âge - résumé -->
-  <div class="flex justify-center pt-10 mx-5 font-lato me ">
-      <img src="./images/photo.jpg" alt="Photo" class="w-72 rounded-full shadow-xl" />
+  <div class="flex flex-col md:flex-row pt-10 mx-5 font-lato me">
+      <img src="./images/photo.jpg" alt="Photo" class="w-72 rounded-full shadow-xl m-auto" />
 
     <div class="flex flex-col ml-4 ">
       <h1
       data-aos="fade-down-right"
       data-aos-duration="1000"
-      class="text-5xl mt-2"
+      class="text-5xl mt-2 text-center md:text-start"
       >
       Nicolas D'Addabbo
     </h1>
-    <h2 class="text-3xl">
+    <h2 class="text-3xl text-center md:text-start">
       24 ans Développeur Full Stack</span>
     </h2>
     <p class="mt-5 font-xl font-bold">
@@ -44,22 +44,22 @@
 </div>
 
 <!-- Soft skills - loisirs - informations -->
-<div class="mt-10 pt-5 w-full flex h-screen bg-black text-white">
+<div class="flex-col md:flex-row justify-center mt-10 pt-5 w-full flex bg-black text-white">
   <!-- Soft skills -->
   <div
-  class="w-72 border-r border-r-black flex-1 flex flex-col items-center soft-skills"
+  class="w-full flex-1 flex flex-col m-auto md:m-0 items-center soft-skills border-b md:border-none"
   >
 </div>
 
 <!-- Loisirs -->
 <div
-class="w-72 flex-1 flex flex-col items-center hobbies"
+class="flex-1 flex flex-col items-center mt-5 md:mt-0 hobbies border-b md:border-none"
 >
 </div>
 
 <!-- Informations -->
 <div
-class="w-72 flex-1 flex flex-col items-center informations"
+class="flex-1 flex flex-col items-center informations text-center mt-5 md:mt-0 md:text-start"
 >
 
 </div>
@@ -113,17 +113,17 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
 </section>
 
 <!-- Expérience -->
-<section class=" text-black relative  bg-exp   ">
-  <h1 class="absolute text-5xl font-lato m-5 left-0 font-bold" data-aos="fade-right" data-aos-once="true">Expériences</h1>
+<section class=" text-black relative">
+  <!-- <h1 class="absolute text-5xl font-lato m-5 left-0 font-bold" data-aos="fade-right" data-aos-once="true">Expériences</h1> -->
 
-<div class="grid grid-cols-2 gap-4 opacity-100  w-full">
+<div class="xl:grid xl:grid-cols-2 gap-4 opacity-100 w-full">
   
   <div class="flex-1">
-    <img src="/public/images/multios.png" alt="" class="w-96 ml-72">
+    <img src="/public/images/multios.png" alt="" class="w-96 xl:ml-72">
   </div>
-  <div class="w-full h-full"></div>
-  <div class="w-full h-full"></div>
-  <div class="flex-1 font-lato ">
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="flex-1 font-lato">
 
     <div class="ml-10">
       <h3 class="text-3xl tracking-wider font-extrabold my-3">Stage chez Multi OS</h3>
@@ -153,16 +153,16 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
     </div> 
     
   </div>
-  <div class="w-full h-full"></div>
-  <div class="w-full h-full"></div>
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="w-full h-full hidden xl:block"></div>
   <div class="flex-1">
-    <img src="/public/images/labo-project-arch.png" alt="" class="w-[700px] ml-10"> 
+    <img src="/public/images/labo-project-arch.png" alt="" class="w-[700px] md:ml-10"> 
   </div>
   <div class="flex-1">
-    <img src="/public/images/encyclopediop.png" alt="" class="w-[700px] ml-10 mt-20"> 
+    <img src="/public/images/encyclopediop.png" alt="" class="w-[700px] md:ml-10 mt-20"> 
   </div>
-  <div class="w-full h-full"></div>
-  <div class="w-full h-full"></div>
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="w-full h-full hidden xl:block"></div>
   <div class="flex-1 font-lato text-black ">
     <div class="ml-10 ">
       <h3 class="text-3xl tracking-wider font-extrabold my-3">Projet perso - Encyclopédie One Piece</h3>
@@ -186,16 +186,16 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
     </div> 
     
   </div>
-  <div class="w-full h-full"></div>
-  <div class="w-full h-full"></div>
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="w-full h-full hidden xl:block"></div>
   <div class="flex-1">
-    <img src="/public/images/sitedr.png" alt="" class="w-[700px] ml-10 "> 
+    <img src="/public/images/sitedr.png" alt="" class="w-[700px] md:ml-10 "> 
   </div>
   <div class="flex-1">
-    <img src="/public/images/cuisine.jpg" alt="" class="w-[700px] ml-10"> 
+    <img src="/public/images/cuisine.jpg" alt="" class="w-[700px] md:ml-10"> 
   </div>
-  <div class="w-full h-full"></div>
-  <div class="w-full h-full"></div>
+  <div class="w-full h-full hidden xl:block"></div>
+  <div class="w-full h-full hidden xl:block"></div>
   <div class="flex-1 font-lato text-black ">
     <div class="ml-10 ">
       <h3 class="text-3xl tracking-wider font-extrabold my-3">Projet de fin de formation - Site de cuisine</h3>
@@ -223,7 +223,7 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
 
 <!-- Formations -->
 <section class="w-full text-white relative border-b bg-black formations overflow-hidden">
-<h1 class="absolute text-5xl font-lato m-10 right-0 font-bold" data-aos="fade-left" data-aos-once="true">Formations</h1>
+<!-- <h1 class="absolute text-5xl font-lato m-10 right-0 font-bold" data-aos="fade-left" data-aos-once="true">Formations</h1> -->
 <div class="w-full h-[600px] relative flex flex-row ">
   <!-- <div class="absolute w-10 h-10 rounded-full bg-white left-[29%] top-16">
   </div> -->
@@ -363,7 +363,7 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
 
 </div> -->
 
-<section class="flex relative">
+<!-- <section class="flex relative">
   <div class="title flex flex-col gap-2 items-center justify-center font-gotham">
     <div class="flex w-72 justify-start">
       <img src="/public/images/cv.png" alt="Gmail logo" class="w-10">
@@ -376,7 +376,7 @@ class="flex-1 bg-black gap-4 text-4xl flex flex-wrap justify-center py-2"
   </div>
   <div class="bg"></div>
 
-</section>
+</section> -->
 
 <script src="../dist/app-bundle.js"></script>
 </body>

@@ -22,6 +22,7 @@ softSkilssData.forEach((s) => {
   const li = document.createElement("li");
   li.classList.add("my-10");
   li.innerText = s.name;
+  li.classList.add("text-sm", "md:text-xl");
   softSkillList.appendChild(li);
 });
 
@@ -58,6 +59,7 @@ hobbiesData.forEach((h) => {
   img.src = h.logoImgPath;
 
   const span = document.createElement("span");
+  span.classList.add("text-sm", "md:text-xl");
   span.innerText = h.name;
 
   div.appendChild(img);
@@ -86,7 +88,9 @@ InformationsData.forEach((i) => {
     "ease-in",
     "duration-300",
     "hover:-translate-y-1",
-    "hover:translate-x-1"
+    "hover:translate-x-1",
+    "text-sm",
+    "md:text-xl"
   );
   const img = document.createElement("img");
   img.src = i.logoImgPath;
@@ -101,6 +105,7 @@ InformationsData.forEach((i) => {
     li.appendChild(a);
   } else {
     const span = document.createElement("span");
+    span.classList.add("text-sm", "md:text-xl");
     span.innerText = ` ${i.text} `;
     li.appendChild(span);
   }
@@ -252,8 +257,8 @@ function createModal(
     "inset-0",
     "left-0",
     "top-0",
-    "w-[600px]",
-    "h-[620px]",
+    "md:w-[600px]",
+    "md:h-[620px]",
     "m-auto",
     "rounded-lg",
     "shadow-xl",
@@ -289,7 +294,8 @@ function createModal(
   const ul = document.createElement("ul");
   ul.classList.add(
     "text-black",
-    "text-xl",
+    "text-sm",
+    "md:text-xl",
     "list-disc",
     "mt-10",
     "mb-5",
