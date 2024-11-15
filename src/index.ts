@@ -4,6 +4,7 @@ import { softSkillsList as softSkilssData } from "./data/soft_skill_list";
 import { hobbiesData } from "./data/hobbies";
 import { InformationsData } from "./data/informations";
 import { LanguagesSkillsData } from "./data/languages_skills";
+import { experienceData } from "./data/experience";
 
 AOS.init();
 const body = document.querySelector("body");
@@ -116,6 +117,8 @@ InformationsData.forEach((i) => {
 informations.appendChild(infoTitle);
 informations.appendChild(infoList);
 
+// Ajout des skills
+
 const skillSection = document.querySelector(".skills-section") as HTMLElement;
 
 LanguagesSkillsData.forEach((s) => {
@@ -178,6 +181,57 @@ LanguagesSkillsData.forEach((s) => {
 const jsSkills = document.querySelectorAll(".skills > li");
 jsSkills.forEach((li) => li.classList.add("text-xl"));
 
+// Ajout des expériences
+
+const experiencesSection = document.querySelector(
+  ".experiences > .experiences-wrapper"
+) as HTMLDivElement;
+
+experienceData.forEach((exp) => {
+  const div = document.createElement("div");
+  div.classList.add("flex-1", "font-lato");
+  const div2 = document.createElement("div");
+  div2.classList.add("ml-10");
+  const title = document.createElement("h3");
+  title.classList.add("text-3xl", "tracking-wider", "font-extrabold", "my-3");
+  title.innerText = exp.title;
+  const subtitle = document.createElement("h3");
+  subtitle.classList.add("text-2xl", "my-3");
+  subtitle.innerText = exp.subtitle;
+  exp.paragraphsDescription.forEach((p) => {
+    const paragraph = document.createElement("p");
+    paragraph.classList.add("text-lg", "my-3");
+    paragraph.innerText = p;
+
+    div2.appendChild(paragraph);
+  });
+  if (exp.link) {
+    const link = document.createElement("a");
+    link.classList.add("text-blue-700", "underline", "font-bold");
+    link.href = exp.link;
+    div2.appendChild(link);
+  }
+
+  const placeholderDiv = document.createElement("div");
+  placeholderDiv.classList.add("w-full", "h-full", "hidden", "xl:block");
+  const placeholderDiv2 = document.createElement("div");
+  placeholderDiv2.classList.add("w-full", "h-full", "hidden", "xl:block");
+
+  const imgDiv = document.createElement("div");
+  div.classList.add("flex-1", "my-10");
+  const img = document.createElement("img");
+  img.classList.add("w-96", "m-auto");
+  img.src = exp.image;
+
+  experiencesSection.appendChild(div);
+  div.appendChild(div2);
+  div2.appendChild(title);
+  div2.appendChild(subtitle);
+  experiencesSection.appendChild(placeholderDiv);
+  experiencesSection.appendChild(placeholderDiv2);
+  experiencesSection.appendChild(imgDiv);
+  imgDiv.appendChild(img);
+});
 // Fonctions
 
 function createAnimatedButton(
