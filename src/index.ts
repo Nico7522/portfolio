@@ -212,6 +212,7 @@ experienceData.forEach((exp) => {
     const link = document.createElement("a");
     link.classList.add("text-blue-700", "underline", "font-bold");
     link.href = exp.link;
+    link.target = "_blank";
     link.innerText = "Visiter";
     div2.appendChild(link);
   }
