@@ -5,6 +5,7 @@ import { hobbiesData } from "./data/hobbies";
 import { InformationsData } from "./data/informations";
 import { LanguagesSkillsData } from "./data/languages_skills";
 import { experienceData } from "./data/experience";
+import { studiesData } from "./data/studies";
 
 AOS.init();
 const body = document.querySelector("body");
@@ -191,13 +192,15 @@ experienceData.forEach((exp) => {
   const div = document.createElement("div");
   div.classList.add("flex-1", "font-lato");
   const div2 = document.createElement("div");
-  div2.classList.add("ml-10");
+  div2.classList.add("xl:ml-10", "mx-5", "xl:mx-0");
   const title = document.createElement("h3");
   title.classList.add("text-3xl", "tracking-wider", "font-extrabold", "my-3");
   title.innerText = exp.title;
   const subtitle = document.createElement("h3");
   subtitle.classList.add("text-2xl", "my-3");
   subtitle.innerText = exp.subtitle;
+  div2.appendChild(title);
+  div2.appendChild(subtitle);
   exp.paragraphsDescription.forEach((p) => {
     const paragraph = document.createElement("p");
     paragraph.classList.add("text-lg", "my-3");
@@ -209,6 +212,7 @@ experienceData.forEach((exp) => {
     const link = document.createElement("a");
     link.classList.add("text-blue-700", "underline", "font-bold");
     link.href = exp.link;
+    link.innerText = "Visiter";
     div2.appendChild(link);
   }
 
@@ -220,18 +224,109 @@ experienceData.forEach((exp) => {
   const imgDiv = document.createElement("div");
   div.classList.add("flex-1", "my-10");
   const img = document.createElement("img");
-  img.classList.add("w-96", "m-auto");
+  img.classList.add("w-[500px]", "m-auto");
   img.src = exp.image;
 
   experiencesSection.appendChild(div);
   div.appendChild(div2);
-  div2.appendChild(title);
-  div2.appendChild(subtitle);
+
   experiencesSection.appendChild(placeholderDiv);
   experiencesSection.appendChild(placeholderDiv2);
   experiencesSection.appendChild(imgDiv);
   imgDiv.appendChild(img);
 });
+
+// Ajout des études
+
+const studiesSection = document.querySelector(".studies") as HTMLElement;
+studiesData.forEach((study) => {
+  const wrapperDiv = document.createElement("div");
+  wrapperDiv.classList.add(
+    "w-full",
+    "h-[600px]",
+    "relative",
+    "flex",
+    "flex-row"
+  );
+
+  const titleDiv = document.createElement("div");
+  titleDiv.classList.add(
+    "flex",
+    "items-center",
+    "border-r-2",
+    "h-full",
+    "border-r-white",
+    "w-60",
+    "md:w-96",
+    "relative",
+    "bs"
+  );
+
+  const location = document.createElement("h2");
+  location.classList.add("text-base", "md:text-2xl", "mx-2", "text-center");
+  location.innerText = study.title;
+
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add(
+    "flex",
+    "flex-col",
+    "items-center",
+    "justify-center",
+    "m-auto",
+    "w-full"
+  );
+
+  const duration = document.createElement("h2");
+  duration.classList.add("ml-14", "text-2xl", "mx-5");
+  duration.innerText = study.durationDate;
+
+  const studyTitle = document.createElement("h2");
+  studyTitle.classList.add("ml-14", "text-1xl", "mx-5", "mb-5");
+  studyTitle.innerText = study.title;
+
+  const innerWrapperDiv = document.createElement("div");
+  innerWrapperDiv.classList.add("flex", "flex-col", "md:flex-row");
+
+  const img = document.createElement("img");
+  img.classList.add("w-[200px]", "flex-1", "m-auto");
+  img.src = study.img;
+
+  const listDiv = document.createElement("div");
+  listDiv.classList.add(
+    "flex",
+    "flex-col",
+    "flex-1",
+    "md:w-72",
+    "items-center"
+  );
+
+  const list = document.createElement("ul");
+  list.classList.add("font-bold", "text-sm");
+
+  study.acquiredSkills.forEach((s) => {
+    const li = document.createElement("li");
+    li.classList.add("flex");
+    const img = document.createElement("img");
+    img.src = "/public/images/check.png";
+    img.classList.add("h-6");
+
+    li.appendChild(img);
+    li.innerHTML += s;
+    list.appendChild(li);
+  });
+
+  studiesSection.appendChild(wrapperDiv);
+  wrapperDiv.appendChild(titleDiv);
+  titleDiv.appendChild(location);
+  wrapperDiv.appendChild(mainDiv);
+  mainDiv.appendChild(duration);
+  mainDiv.appendChild(studyTitle);
+  mainDiv.appendChild(innerWrapperDiv);
+  innerWrapperDiv.appendChild(img);
+  innerWrapperDiv.appendChild(listDiv);
+  listDiv.appendChild(list);
+});
+
 // Fonctions
 
 function createAnimatedButton(

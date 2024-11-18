@@ -72,11 +72,10 @@ a {
 }
 .title {
   position: relative;
-  width: 70%;
+  width: 50%;
   height: full;
   padding: 10px 20px 10px 10px;
   font-size: 20px;
-  position: relative;
   color: #fff;
   background: #e5e7eb;
 }
@@ -116,7 +115,7 @@ a {
   content: " ";
   position: absolute;
   right: -10px;
-  width: 20px;
+  width: 17px;
   height: 2px;
   background: white;
 }
