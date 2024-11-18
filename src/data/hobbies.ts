@@ -9,7 +9,10 @@ export const hobbiesData: Hobby[] = [
     name: "Course",
     logoImgPath: "./images/running-man.png",
   },
-
+  {
+    name: "Musculation",
+    logoImgPath: "./images/weightlifter-frontal-silhouette.png",
+  },
   {
     name: "Nutrition",
     logoImgPath: "./images/restaurant.png",
