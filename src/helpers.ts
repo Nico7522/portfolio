@@ -163,3 +163,7 @@ export function getRandomAnimation(): string {
   let randomNumber = Math.floor(Math.random() * animations.length);
   return animations[randomNumber];
 }
+
+export function openPdf() {
+  const pdf = window.open("CV.pdf", "_blank");
+}
