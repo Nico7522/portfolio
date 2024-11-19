@@ -5,13 +5,13 @@ export const InformationsData: Information[] = [
     text: "Linkedin",
     logoImgPath: "/public/images/linkedin.png",
     isAncor: true,
-    url: "",
+    url: "https://www.linkedin.com/in/nicolas-daddabbo/",
   },
   {
     text: "Github",
     logoImgPath: "/public/images/logo-github.png",
     isAncor: true,
-    url: "",
+    url: "https://github.com/Nico7522",
   },
   {
     text: "nico.daddabbo7100@gmail.com",

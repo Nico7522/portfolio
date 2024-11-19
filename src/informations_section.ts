@@ -12,24 +12,29 @@ export function createInformationsSection(section: HTMLElement) {
     const li = document.createElement("li");
     li.classList.add(
       "my-10",
-      "transition",
-      "ease-in",
-      "duration-300",
-      "hover:-translate-y-1",
-      "hover:translate-x-1",
+
       "text-sm",
       "md:text-xl"
     );
     const img = document.createElement("img");
     img.src = i.logoImgPath;
     img.alt = i.text;
-    img.classList.add("w-10", "inline");
+    img.classList.add("w-7", "inline");
     li.append(img);
 
     if (i.isAncor) {
+      li.classList.add(
+        "transition",
+        "ease-in",
+        "duration-300",
+        "hover:-translate-y-1",
+        "hover:translate-x-1",
+        "cursor-pointer"
+      );
       const a = document.createElement("a");
       if (i.url) a.href = i.url;
       a.innerText = ` ${i.text} `;
+      a.target = "_blank";
       li.appendChild(a);
     } else {
       const span = document.createElement("span");

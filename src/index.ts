@@ -4,7 +4,7 @@ AOS.init();
 
 import { createSoftSkillsSection } from "./softskills_section";
 import { createHobbiesSection } from "./hobbies_section";
-import { createInformationsSection } from "./informations_sction";
+import { createInformationsSection } from "./informations_section";
 import { createSkillsSection } from "./skills_section";
 import { createExperiencesSection } from "./experiences_section";
 import { createStudiesSection } from "./studies_section";
