@@ -49,7 +49,7 @@ export class Portfolio {
       "font-lato",
       "text-3xl",
       "mt-5",
-      "list-image-[url(../public/images/check.png)]"
+      "list-image-[url(../images/check.png)]"
     );
     softSkilssData.forEach((s) => {
       const li = document.createElement("li");
@@ -356,7 +356,7 @@ export class Portfolio {
         const li = document.createElement("li");
         li.classList.add("flex");
         const img = document.createElement("img");
-        img.src = "/public/images/check.png";
+        img.src = "./images/check.png";
         img.classList.add("h-6");
 
         li.appendChild(img);

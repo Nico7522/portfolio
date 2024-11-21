@@ -35,7 +35,7 @@ export const studiesData: Study[] = [
   },
   {
     title: "Formation Technicien informatique ",
-    img: "/public/images/format21.png",
+    img: "./images/format21.png",
     location: "Technofutur TIC Gosselies",
     acquiredSkills: [
       "Montage et mise en service d'un système informatique",
@@ -47,7 +47,7 @@ export const studiesData: Study[] = [
   },
   {
     title: "Etude secondaire technique Electromécanique",
-    img: "/public/images/artsetmetiers.png",
+    img: "./images/artsetmetiers.png",
     location: "Technofutur TIC Gosselies",
     acquiredSkills: [
       "Automation",

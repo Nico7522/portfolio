@@ -3,7 +3,7 @@ import { LanguageSkill } from "../models/language_skill";
 export const LanguagesSkillsData: LanguageSkill[] = [
   {
     title: "Javascript",
-    imageLogoPath: "/public/images/js2.png",
+    imageLogoPath: "./images/js2.png",
     bgColor: "bg-yellow-400",
     exp: 3,
     skillsList: [
@@ -24,7 +24,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Typescript",
-    imageLogoPath: "/public/images/ts.png",
+    imageLogoPath: "./images/ts.png",
     bgColor: "bg-blue-400",
     exp: 3,
     skillsList: [
@@ -45,7 +45,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "C# / .NET",
-    imageLogoPath: "/public/images/CSharpLogo.png",
+    imageLogoPath: "./images/CSharpLogo.png",
     bgColor: "bg-fuchsia-400",
     exp: 1,
     skillsList: [
@@ -61,7 +61,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Angular",
-    imageLogoPath: "/public/images/angular.jfif",
+    imageLogoPath: "./images/angular.jfif",
     bgColor: "bg-gray-400",
     exp: 3,
     skillsList: [
@@ -79,7 +79,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "React",
-    imageLogoPath: "/public/images/react.png",
+    imageLogoPath: "./images/react.png",
     bgColor: "bg-blue-400",
     exp: 3,
     skillsList: [
@@ -96,7 +96,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Node JS",
-    imageLogoPath: "/public/images/node.svg",
+    imageLogoPath: "./images/node.svg",
     bgColor: "bg-green-400",
     exp: 3,
     skillsList: [
@@ -118,7 +118,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Adonis JS",
-    imageLogoPath: "/public/images/adonisjs.svg",
+    imageLogoPath: "./images/adonisjs.svg",
     bgColor: "bg-purple-400",
     exp: 2,
     skillsList: [
@@ -135,7 +135,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Docker",
-    imageLogoPath: "/public/images/docker.svg",
+    imageLogoPath: "./images/docker.svg",
     bgColor: "bg-blue-400",
     exp: 1,
     skillsList: [
@@ -154,7 +154,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Informatiques",
-    imageLogoPath: "/public/images/computer.png",
+    imageLogoPath: "./images/computer.png",
     bgColor: "bg-slate-400",
     exp: 6,
     skillsList: [
