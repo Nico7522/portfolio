@@ -2,6 +2,28 @@ import { Experience } from "../models/experience";
 
 export const experienceData: Experience[] = [
   {
+    title: "Projet perso - API de gestion de tâches/équipes - Partie back-end",
+    subtitle: "Création d'une API de gestion de tâches et d'équipes",
+    paragraphsDescription: [
+      "À la suite de mon stage je me suis intéréssé à la 'Clean Architecture' et au 'CQRS'",
+      "Après avoir lu pas mal d'articles sur la Clean Architecture et le CQRS et après avoir suivi une formation de plusieurs heures ayant pour but d'apprendre comment découper une application avec cette architecture et le pattern CQRS. J'ai décidé de démarré mon propre projet et de mettre en pratique ce que j'avais appris.",
+      "J'ai crée cette API en .NET avec Entity Framework et Identity (que j'ai découvert durant mon stage et que j'ai énormément apprécié). J'y ai de plus ajouté une partie dédiée au Websocket et surtout pour la première fois, des tests.",
+    ],
+    image: "./images/cleanarchtodoapi.png",
+    githhubLink: "https://github.com/Nico7522/Todo-Front",
+  },
+  {
+    title: "Projet perso - API de gestion de tâches/équipes - Partie front-end",
+    subtitle:
+      "Création d'une l'application Web de gestion de tâches et d'équipes",
+    paragraphsDescription: [
+      "Pour consommer cette API, j'ai commencé à créer la partie front-end avec Angular v17 et Angular matérial",
+      "Bien que ce projet ne sois pas fini, la partie 'utilisateur' est très bien avancé, avec notament un chat fonctionnel. La partie admin, elle, est encore à commencer",
+    ],
+    image: "./images/todofront.png",
+    githhubLink: "https://github.com/Nico7522/Todo-Front",
+  },
+  {
     title: "Stage chez Multi OS",
     subtitle: "Refonte d'une application Web en Angular 17",
     paragraphsDescription: [
@@ -11,23 +33,36 @@ export const experienceData: Experience[] = [
     image: "./images/multios.png",
   },
   {
-    title: "Projet de fin de l'abo Architecte Logiciel",
-    subtitle: "Création d'un e-commerce",
+    title: "Projet de fin de l'abo Architecte Logiciel - Partie back-end",
+    subtitle: "Création d'une API pour mon projet de fin de formation",
     paragraphsDescription: [
       "Pour la fin de ma formation d'Architècte logiciel, je me suis lancé dans la création d'un e-commerce de vente de chaussure.",
       "Pourquoi un e-commerce ? Car je me suis dit que ce genre de projet allait me permettre de me servir d'un maximum de compétences que j'ai pu acquérir. Et aussi me pousser à résoudre des problématiques encore jamais rencontrées jusque là.",
-      "Pour ce projet, j'ai utilisé l'environnement .NET avec Entity Framework ainsi que Angular 16",
+      "Pour cette API, j'ai utilisé l'environnement .NET avec Entity Framework",
+    ],
+    image: "./images/pffarch.png",
+    githhubLink: "https://github.com/Nico7522/API_EF_Hash_Token",
+  },
+  {
+    title: "Projet de fin de l'abo Architecte Logiciel - Partie front-end",
+    subtitle: "Création d'un site web mon projet de fin de formation",
+    paragraphsDescription: [
+      "Voici la partie front-end de mon projet de fin de formation d'Architecte Logiciel",
+      "J'ai réalisé ce projet avec Angular v16 et Angular Material pour le style",
     ],
     image: "./images/labo-project-arch.png",
+    githhubLink: "https://github.com/Nico7522/angular-labo",
   },
   {
     title: "Projet perso - Encyclopédie One Piece",
     subtitle: "Création d'un site d'informations sur le lore de One Piece",
     paragraphsDescription: [
-      "Suite à la fin de ma formation de Développeur Full Stack et voulant travailler avec React et Typescript j'ai créé une mini encyclopédie sur les objets et lieux du manga One Piece",
+      "Suite à la fin de ma formation de Développeur Full Stack et voulant travailler avec React et Typescript, j'ai créé une mini encyclopédie sur les objets et lieux du manga One Piece",
+      "Je me suis aidé de d'une API public faite par des fans : https://api-onepiece.com/fr",
     ],
     image: "./images/encyclopediop.png",
     link: "https://mini-encyclopedie-op.vercel.app/",
+    githhubLink: "https://github.com/Nico7522/fdd-project",
   },
   {
     title: "Projet perso - Site de lecture de manga",
@@ -37,6 +72,7 @@ export const experienceData: Experience[] = [
     ],
     image: "./images/sitedr.png",
     link: "https://deadrock-lecture.vercel.app/",
+    githhubLink: "https://github.com/Nico7522/deadrock-project",
   },
   {
     title: "Projet de fin de formation - Site de cuisine",
@@ -49,5 +85,6 @@ export const experienceData: Experience[] = [
     ],
     image: "./images/cuisine.jpg",
     link: "https://ncls.nicorecipe.com/",
+    githhubLink: "https://github.com/Nico7522/recipe-project",
   },
 ];

@@ -267,6 +267,16 @@ export class Portfolio {
         div2.appendChild(link);
       }
 
+      if (exp.githhubLink) {
+        const link = document.createElement("a");
+        link.classList.add("text-blue-700", "underline", "font-bold");
+        if (exp.link) link.classList.add("ml-4");
+        link.href = exp.githhubLink;
+        link.target = "_blank";
+        link.innerText = "Voir le repo Github";
+        div2.appendChild(link);
+      }
+
       const placeholderDiv = document.createElement("div");
       placeholderDiv.classList.add("w-full", "h-full", "hidden", "xl:block");
       const placeholderDiv2 = document.createElement("div");

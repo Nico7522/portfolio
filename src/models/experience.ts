@@ -4,4 +4,5 @@ export interface Experience {
   paragraphsDescription: string[];
   image: string;
   link?: string;
+  githhubLink?: string;
 }
