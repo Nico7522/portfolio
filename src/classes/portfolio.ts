@@ -124,11 +124,7 @@ export class Portfolio {
       const li = document.createElement("li");
       li.classList.add(
         "my-10",
-        "transition",
-        "ease-in",
-        "duration-300",
-        "hover:-translate-y-1",
-        "hover:translate-x-1",
+
         "text-sm",
         "md:text-xl"
       );
@@ -139,8 +135,16 @@ export class Portfolio {
       li.append(img);
 
       if (i.isAncor) {
+        li.classList.add(
+          "transition",
+          "ease-in",
+          "duration-300",
+          "hover:-translate-y-1",
+          "hover:translate-x-1"
+        );
         const a = document.createElement("a");
         if (i.url) a.href = i.url;
+        a.target = "_blank";
         a.innerText = ` ${i.text} `;
         li.appendChild(a);
       } else {
@@ -286,8 +290,9 @@ export class Portfolio {
       div.classList.add("flex-1", "my-10");
       const img = document.createElement("img");
       img.classList.add("w-[500px]", "m-auto");
+      img.setAttribute("data-aos", "zoom-in");
+      img.setAttribute("data-aos-once", "true");
       img.src = exp.image;
-
       this.#experiencesSection.appendChild(div);
       div.appendChild(div2);
 
@@ -323,7 +328,7 @@ export class Portfolio {
 
       const location = document.createElement("h2");
       location.classList.add("text-base", "md:text-2xl", "mx-2", "text-center");
-      location.innerText = study.title;
+      location.innerText = study.location;
 
       const mainDiv = document.createElement("div");
       mainDiv.classList.add(

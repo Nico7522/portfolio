@@ -2,7 +2,7 @@ import { Study } from "../models/studies";
 
 export const studiesData: Study[] = [
   {
-    title: "Formation Architecte Logiciel",
+    title: "Formation Architecte logiciel",
     img: "https://technofuturtic.be/wp-content/uploads/2023/03/logo-technofutur-2024.svg",
     location: "Technofutur TIC Gosselies",
     acquiredSkills: [
@@ -36,7 +36,7 @@ export const studiesData: Study[] = [
   {
     title: "Formation Technicien informatique ",
     img: "./images/format21.png",
-    location: "Technofutur TIC Gosselies",
+    location: "Format 21 La Louvière",
     acquiredSkills: [
       "Montage et mise en service d'un système informatique",
       "Maintenance, diagnostic de pannes et intervention technique",
@@ -46,9 +46,9 @@ export const studiesData: Study[] = [
     durationDate: "Septembre 2019 - Juin 2021",
   },
   {
-    title: "Etude secondaire technique Electromécanique",
+    title: "Étude secondaire technique Électromécanique",
     img: "./images/artsetmetiers.png",
-    location: "Technofutur TIC Gosselies",
+    location: "Arts & Métiers La Louvières",
     acquiredSkills: [
       "Automation",
       "Pneumatique",
