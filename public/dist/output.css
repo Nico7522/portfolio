@@ -636,10 +636,6 @@ video {
   margin-left: 3.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -722,10 +718,6 @@ video {
 
 .w-16 {
   width: 4rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-32 {
@@ -930,6 +922,11 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-2 {
@@ -1261,6 +1258,11 @@ a {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-start {
