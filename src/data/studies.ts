@@ -4,6 +4,7 @@ export const studiesData: Study[] = [
   {
     title: "Formation Architecte logiciel",
     img: "https://technofuturtic.be/wp-content/uploads/2023/03/logo-technofutur-2024.svg",
+    alt: "Technofutur TIC logo",
     location: "Technofutur TIC Gosselies",
     acquiredSkills: [
       "Technologies et outils .NET",
@@ -17,6 +18,8 @@ export const studiesData: Study[] = [
   {
     title: "Formation Développeur Web Full Stack",
     img: "https://technofuturtic.be/wp-content/uploads/2023/03/logo-technofutur-2024.svg",
+    alt: "Technofutur TIC logo",
+
     location: "Technofutur TIC Gosselies",
     acquiredSkills: ["Javascript & Typescript", "Angular", "React", "Node"],
     durationDate: "Décembre 2022 - Juin 2023",
@@ -24,6 +27,8 @@ export const studiesData: Study[] = [
   {
     title: "Formation Les fondements de l'IT'",
     img: "https://technofuturtic.be/wp-content/uploads/2023/03/logo-technofutur-2024.svg",
+    alt: "Technofutur TIC logo",
+
     location: "Technofutur TIC Gosselies",
     acquiredSkills: [
       "Algorithmie de base",
@@ -36,6 +41,8 @@ export const studiesData: Study[] = [
   {
     title: "Formation Technicien informatique ",
     img: "./images/format21.png",
+    alt: "Format 21 logo",
+
     location: "Format 21 La Louvière",
     acquiredSkills: [
       "Montage et mise en service d'un système informatique",
@@ -48,6 +55,8 @@ export const studiesData: Study[] = [
   {
     title: "Étude secondaire technique Électromécanique",
     img: "./images/artsetmetiers.png",
+    alt: "Arts & Métiers logo",
+
     location: "Arts & Métiers La Louvières",
     acquiredSkills: [
       "Automation",

@@ -3,5 +3,6 @@ export interface Study {
   durationDate: string;
   title: string;
   img: string;
+  alt: string;
   acquiredSkills: string[];
 }

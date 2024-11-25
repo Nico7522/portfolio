@@ -11,6 +11,7 @@ export const experienceData: Experience[] = [
       "Cette API a été réalisée avec .NET, Entity Framework et Identity. J'ai également utilisé des packages comme MediatR, AutoMapper et Fluent Validation.",
     ],
     image: "./images/cleanarchtodoapi.png",
+    alt: "Clean arch todo API",
     githhubLink: "https://github.com/Nico7522/Todo-Front",
   },
   {
@@ -22,6 +23,8 @@ export const experienceData: Experience[] = [
       "La partie utilisateur est presque terminée, mais la partie administrateur reste à développer.",
     ],
     image: "./images/todofront.png",
+    alt: "Front todo API",
+
     githhubLink: "https://github.com/Nico7522/Todo-Front",
   },
   {
@@ -32,6 +35,7 @@ export const experienceData: Experience[] = [
       "Pour cela, j'ai démarré un nouveau projet en Angular 17 en standalone component, et j'ai utilisé la bibliothèque PrimeNG pour le style.",
     ],
     image: "./images/multios.png",
+    alt: "Multi OS logo",
   },
   {
     title:
@@ -43,6 +47,8 @@ export const experienceData: Experience[] = [
       "Pour cette API, j'ai utilisé l'environnement .NET avec Entity Framework.",
     ],
     image: "./images/pffarch.png",
+    alt: "Back projet arch logiciel photo",
+
     githhubLink: "https://github.com/Nico7522/API_EF_Hash_Token",
   },
   {
@@ -54,6 +60,7 @@ export const experienceData: Experience[] = [
       "Bien que ce projet ne soit pas totalement terminé, je suis assez satisfait de ce que j'ai pu faire et mettre en pratique.",
     ],
     image: "./images/labo-project-arch.png",
+    alt: "Front projet arch logiciel photo",
     githhubLink: "https://github.com/Nico7522/angular-labo",
   },
   {
@@ -64,6 +71,7 @@ export const experienceData: Experience[] = [
       "Je me suis aidé d'une API publique créée par des fans : https://api-onepiece.com/fr",
     ],
     image: "./images/encyclopediop.png",
+    alt: "Encyclopédie One Piece photo",
     link: "https://mini-encyclopedie-op.vercel.app/",
     githhubLink: "https://github.com/Nico7522/fdd-project",
   },
@@ -75,6 +83,8 @@ export const experienceData: Experience[] = [
       "Chaque mois, les nouveaux chapitres étaient postés sur le site et lus par la communauté.",
     ],
     image: "./images/sitedr.png",
+    alt: "Site lecture photo",
+
     link: "https://deadrock-lecture.vercel.app/",
     githhubLink: "https://github.com/Nico7522/deadrock-project",
   },
@@ -88,6 +98,8 @@ export const experienceData: Experience[] = [
       "Pour l'hébergement, j'ai opté pour un VPS afin d'héberger l'API. C'était une belle occasion d'en apprendre davantage sur le déploiement.",
     ],
     image: "./images/cuisine.jpg",
+    alt: "Projet Full Stack Dev photo",
+
     link: "https://ncls.nicorecipe.com/",
     githhubLink: "https://github.com/Nico7522/recipe-project",
   },

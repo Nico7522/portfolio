@@ -178,6 +178,7 @@ export class Portfolio {
       const logo = document.createElement("img");
       logo.classList.add("w-6", "h-6", "mt-2", "mr-2");
       logo.src = s.imageLogoPath;
+      logo.alt = s.title;
 
       const title = document.createElement("h2");
       title.classList.add("font-lato", "font-bold");
@@ -293,6 +294,7 @@ export class Portfolio {
       img.setAttribute("data-aos", "zoom-in");
       img.setAttribute("data-aos-once", "true");
       img.src = exp.image;
+      img.alt = exp.alt;
       this.#experiencesSection.appendChild(div);
       div.appendChild(div2);
 
@@ -354,7 +356,7 @@ export class Portfolio {
       const img = document.createElement("img");
       img.classList.add("w-[200px]", "flex-1", "m-auto");
       img.src = study.img;
-
+      img.alt = study.alt;
       const listDiv = document.createElement("div");
       listDiv.classList.add(
         "flex",
@@ -372,6 +374,7 @@ export class Portfolio {
         li.classList.add("flex");
         const img = document.createElement("img");
         img.src = "./images/check.png";
+        img.alt = "Check logo";
         img.classList.add("h-6");
 
         li.appendChild(img);

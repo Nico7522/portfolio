@@ -90,6 +90,7 @@ export function createModal(
   skillSection.appendChild(div);
   const logo = document.createElement("img");
   logo.src = logoImgPath;
+  logo.alt = title;
   logo.classList.add("w-6", "h-6");
   const h2 = document.createElement("h2");
   h2.classList.add(

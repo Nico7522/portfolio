@@ -3,6 +3,7 @@ export interface Experience {
   subtitle: string;
   paragraphsDescription: string[];
   image: string;
+  alt: string;
   link?: string;
   githhubLink?: string;
 }
