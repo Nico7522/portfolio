@@ -11,7 +11,7 @@ export const experienceData: Experience[] = [
       "La page d'acceuil permet de se 'connecter' soit en tant qu'utilisateur, soit en tant qu'admin. Ensuite, il est possible de s'y balader, ajouter des tâches, les éditer ...",
       "J'ai essayé au maximum de me servir de ce que Angular propose de mieux (signals, rxjs, ssr, nouvelle syntaxe ...) tout en me concentrant sur les bonnes pratiques.",
     ],
-    image: "./images/sitetodossr.png",
+    image: "./images/angular19ssrtodo.png",
     alt: "Todo app Angular 19",
     link: "https://your-task-sigma.vercel.app",
     githhubLink: "https://github.com/Nico7522/todo-list-angular-19",
@@ -37,7 +37,7 @@ export const experienceData: Experience[] = [
       "Pour consommer cette API, j'ai utilisé Angular 17 et Angular Material pour le style. J'en ai profité pour combiner RxJS et les signals, qui sont très plaisants à utiliser ensemble, à mon avis. J'ai également implémenté un système de chat grâce aux WebSockets.",
       "La partie utilisateur est presque terminée, mais la partie administrateur reste à développer.",
     ],
-    image: "./images/todofront.png",
+    image: "./images/todofront.jpg",
     alt: "Front todo API",
 
     githhubLink: "https://github.com/Nico7522/Todo-Front",
@@ -53,8 +53,7 @@ export const experienceData: Experience[] = [
     alt: "Multi OS logo",
   },
   {
-    title:
-      "Projet de fin de l'abonnement Architecte Logiciel - Partie back-end",
+    title: "Projet de fin de formation Architecte Logiciel - Partie back-end",
     subtitle: "Création d'une API pour mon projet de fin de formation",
     paragraphsDescription: [
       "Pour mon projet final de ma formation d'Architecte Logiciel, j'ai réalisé un e-commerce de vente de chaussures.",
@@ -67,8 +66,7 @@ export const experienceData: Experience[] = [
     githhubLink: "https://github.com/Nico7522/API_EF_Hash_Token",
   },
   {
-    title:
-      "Projet de fin de l'abonnement Architecte Logiciel - Partie front-end",
+    title: "Projet de fin de formation Architecte Logiciel - Partie front-end",
     subtitle: "Création d'un site Web pour mon projet de fin de formation",
     paragraphsDescription: [
       "Pour la partie front-end de ce projet, j'ai utilisé Angular 16 et Angular Material pour le style.",

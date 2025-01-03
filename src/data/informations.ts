@@ -9,13 +9,13 @@ export const InformationsData: Information[] = [
   },
   {
     text: "Github",
-    logoImgPath: "./images/logo-github.png",
+    logoImgPath: "./images/github-logo.png",
     isAncor: true,
     url: "https://github.com/Nico7522",
   },
   {
     text: "nico.daddabbo7100@gmail.com",
-    logoImgPath: "./images/gmail.jpg",
+    logoImgPath: "./images/gmail.png",
     isAncor: false,
   },
   {

@@ -61,7 +61,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Angular",
-    imageLogoPath: "./images/angular.jfif",
+    imageLogoPath: "./images/angular.png",
     bgColor: "bg-gray-400",
     exp: 3,
     skillsList: [
@@ -96,7 +96,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Node.js",
-    imageLogoPath: "./images/node.svg",
+    imageLogoPath: "./images/node.png",
     bgColor: "bg-green-400",
     exp: 3,
     skillsList: [
@@ -118,7 +118,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "AdonisJS",
-    imageLogoPath: "./images/adonisjs.svg",
+    imageLogoPath: "./images/adonis.svg",
     bgColor: "bg-purple-400",
     exp: 2,
     skillsList: [
@@ -135,7 +135,7 @@ export const LanguagesSkillsData: LanguageSkill[] = [
   },
   {
     title: "Docker",
-    imageLogoPath: "./images/docker.svg",
+    imageLogoPath: "./images/docker.png",
     bgColor: "bg-blue-400",
     exp: 1,
     skillsList: [

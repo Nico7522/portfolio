@@ -752,6 +752,14 @@ video {
   width: 100%;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
