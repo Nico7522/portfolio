@@ -371,11 +371,11 @@ export class Portfolio {
 
       study.acquiredSkills.forEach((s) => {
         const li = document.createElement("li");
-        li.classList.add("flex");
+        li.classList.add("flex", "mt-2");
         const img = document.createElement("img");
         img.src = "./images/check.png";
         img.alt = "Check logo";
-        img.classList.add("h-6");
+        img.classList.add("h-5", "mt-1");
 
         li.appendChild(img);
         li.innerHTML += s;
