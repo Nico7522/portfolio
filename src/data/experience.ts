@@ -2,6 +2,21 @@ import { Experience } from "../models/experience";
 
 export const experienceData: Experience[] = [
   {
+    title: "Projet perso - Création d'une todo list avec Angular 19 - SSR",
+    subtitle:
+      "Création d'une application de tâche avec les nouveautés d'Angular 19",
+    paragraphsDescription: [
+      "Suite à la sortie de la version 19 d'Angular, j'ai voulu pour la première fois tester le Server Side Rendering en utilisant quelques nouveautés d'Angular 19.",
+      "Je souhaitais en même temps montrer mes capacités avec ce framework, pour ce faire, j'ai donc créer une application permettant de gérer des tâches, et la rendre disponible pour tout le monde.",
+      "La page d'acceuil permet de se 'connecter' soit en tant qu'utilisateur, soit en tant qu'admin. Ensuite, il est possible de s'y balader, ajouter des tâches, les éditer ...",
+      "J'ai essayé au maximum de me servir de ce que Angular propose de mieux (signals, rxjs, ssr, nouvelle syntaxe ...) tout en me concentrant sur les bonnes pratiques.",
+    ],
+    image: "./images/sitetodossr.png",
+    alt: "Todo app Angular 19",
+    link: "https://your-task-sigma.vercel.app",
+    githhubLink: "https://github.com/Nico7522/todo-list-angular-19",
+  },
+  {
     title: "Projet perso - API de gestion de tâches/équipes - Partie back-end",
     subtitle: "Création d'une API de gestion de tâches et d'équipes",
     paragraphsDescription: [
