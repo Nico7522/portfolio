@@ -2,6 +2,25 @@ import { Experience } from "../models/experience";
 
 export const experienceData: Experience[] = [
   {
+    title:
+      "Projet perso - Création d'une application dédiée aux OST/animations de Dokkan Battle",
+    subtitle:
+      "Création d'une application permettant d'écouter les OST et de jouer les animations Dokkan.",
+    paragraphsDescription: [
+      "play.dokkan-ost-api.fr est un petit site dédié aux OST et aux animations des cartes/events de Dokkan Battle.",
+      "Il permet d'écouter les OST des personnages et des events/niveaux, ainsi que de lire les animations associées.",
+      "Le site fonctionne avec Angular 19.2 en SSR pour la partie front, et Node.js / Express / TypeScript / PostgreSQL pour le back.",
+      "Afin de m'aider dans sa conception, je me suis créé quelques petits scripts en Python pour récupérer les informations dont j'ai besoin depuis la base de données de Dokkan, et les envoyer via mon API dans ma DB.",
+      "En plus, je me sers aussi d'outils et de scripts permettant de convertir les fichiers extraits du jeu, qui sont à la base non lisibles, en fichiers lisibles et utilisables.",
+      "Le tout est hébergé sur un VPS que j'administre personnellement.",
+      "Attention ! Le site est loin d'être terminé et il y a des bugs, mais il est déjà possible d'écouter la plupart des OST et de lire les animations",
+    ],
+    image: "./images/dokkanost.png",
+    alt: "Dokkan OST app",
+    link: "https://play.dokkan-ost-api.fr/home",
+    githhubLink: "https://github.com/Nico7522/dokkan_ost_fs/tree/develop",
+  },
+  {
     title: "Projet perso - Création d'une todo list avec Angular 19 - SSR",
     subtitle:
       "Création d'une application de tâche avec les nouveautés d'Angular 19",
