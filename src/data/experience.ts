@@ -3,6 +3,22 @@ import { Experience } from "../models/experience";
 export const experienceData: Experience[] = [
   {
     title:
+      "Projet perso - Création d'une application dédiée à la création de carte Dokkan",
+    subtitle:
+      "Création d'une application permettant de créer des cartes Dokkan Battle avec Angular 19+",
+    paragraphsDescription: [
+      "Ce projet est une petite application en Angular 19+, utilisant principalement FormsModule qui est le module servant à la création et la gestion des formulaires.",
+      "J'ai principalement créé ce projet pour deux raisons.",
+      "La première est d'utiliser un maximum FormsModule afin de faire un formulaire le plus complexe possible.",
+      "La seconde est d'aider les personnes aimant créer des concepts de personnage en leur fournissant un outil simple d'utilisation, et avec un résultat final très proche de ce que le jeu propose.",
+    ],
+    image: "./images/dokkancardmaker.png",
+    alt: "Dokkan Card Maker app",
+    link: "https://card-concept-maker-s434.vercel.app/",
+    githhubLink: "https://github.com/Nico7522/card-concept-maker",
+  },
+  {
+    title:
       "Projet perso - Création d'une application dédiée aux OST/animations de Dokkan Battle",
     subtitle:
       "Création d'une application permettant d'écouter les OST et de jouer les animations Dokkan.",
