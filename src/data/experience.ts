@@ -3,6 +3,22 @@ import { Experience } from "../models/experience";
 export const experienceData: Experience[] = [
   {
     title:
+      "Projet perso - Création d'une application Web de gestion de factures pour garage",
+    subtitle:
+      "Création d'une application permettant de créer des factures pour un garage automobile",
+    paragraphsDescription: [
+      "Voici un projet réalisé avec Angular 20 et NodeJS + Supabase.",
+      "C'est une simple application dédiée à la gestion de factures pour un garage automobile.",
+      "Une connexion est nécéssaire dans un premier temps, on peut ensuite créer/modifier/supprimer de nouveaux clients et de nouvelles factures, ainsi qu'avoir une vue d'ensemble sur différentes données via la page d'acceuil.",
+      "Le tout est hébergé sur mon VPS, le back end est exposé via Caddy et le front end servi par un container Nginx.",
+    ],
+    image: "./images/invoice-g.png",
+    alt: "invoice-g",
+    link: "https://invoice-g.be/auth/login",
+    githhubLink: "https://github.com/Nico7522/invoices-g",
+  },
+  {
+    title:
       "Projet perso - Création d'une application dédiée à la création de carte Dokkan",
     subtitle:
       "Création d'une application permettant de créer des cartes Dokkan Battle avec Angular 19+",
