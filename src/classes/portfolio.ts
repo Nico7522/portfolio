@@ -252,17 +252,61 @@ export class Portfolio {
 
       title.innerText = exp.title;
       const subtitle = document.createElement("h3");
-      subtitle.classList.add("text-2xl", "my-3");
+      subtitle.classList.add("text-2xl", "mt-5");
       subtitle.innerText = exp.subtitle;
       div2.appendChild(title);
       div2.appendChild(subtitle);
-      exp.paragraphsDescription.forEach((p) => {
-        const paragraph = document.createElement("p");
-        paragraph.classList.add("text-lg", "my-3");
-        paragraph.innerText = p;
 
-        div2.appendChild(paragraph);
-      });
+      // paragraphsDescription part
+
+      // technologies part
+      const technologiesTitle = document.createElement("h5");
+      technologiesTitle.innerText = "Technologies";
+      technologiesTitle.classList.add("font-bold", "text-xl", "mt-5");
+      technologiesTitle.setAttribute("data-aos", getRandomAnimation());
+      technologiesTitle.setAttribute("data-aos-once", "true");
+      div2.appendChild(technologiesTitle);
+      const technologiesText = document.createElement("p");
+      technologiesText.classList.add("text-lg", "my-3");
+      technologiesText.innerText = exp.paragraphsDescription.technologies;
+      technologiesText.setAttribute("data-aos", getRandomAnimation());
+      technologiesText.setAttribute("data-aos-once", "true");
+      div2.appendChild(technologiesText);
+
+      // deployment part
+      const deploymentTitle = document.createElement("h5");
+      deploymentTitle.innerText = "Déploiement";
+      deploymentTitle.classList.add("font-bold", "text-xl");
+      deploymentTitle.setAttribute("data-aos", getRandomAnimation());
+      deploymentTitle.setAttribute("data-aos-once", "true");
+      div2.appendChild(deploymentTitle);
+      const deploymentText = document.createElement("p");
+      deploymentText.classList.add("text-lg", "my-3");
+      deploymentText.innerText = exp.paragraphsDescription.deployment;
+      deploymentText.setAttribute("data-aos", getRandomAnimation());
+      deploymentText.setAttribute("data-aos-once", "true");
+      div2.appendChild(deploymentText);
+
+      // functionalities part
+      const functionalitiesTitle = document.createElement("h5");
+      functionalitiesTitle.innerText = "Fonctionnalités";
+      functionalitiesTitle.classList.add("font-bold", "text-xl");
+      functionalitiesTitle.setAttribute("data-aos", getRandomAnimation());
+      functionalitiesTitle.setAttribute("data-aos-once", "true");
+      div2.appendChild(functionalitiesTitle);
+      const functionalitiesText = document.createElement("p");
+      functionalitiesText.classList.add("text-lg", "my-3");
+      functionalitiesText.innerText = exp.paragraphsDescription.functionalities;
+      functionalitiesText.setAttribute("data-aos", getRandomAnimation());
+      functionalitiesText.setAttribute("data-aos-once", "true");
+      div2.appendChild(functionalitiesText);
+      // exp.paragraphsDescription.forEach((p) => {
+      //   const paragraph = document.createElement("p");
+      //   paragraph.classList.add("text-lg", "my-3");
+      //   paragraph.innerText = p;
+
+      //   div2.appendChild(paragraph);
+      // });
       if (exp.link) {
         const link = document.createElement("a");
         link.classList.add("text-blue-700", "underline", "font-bold");
