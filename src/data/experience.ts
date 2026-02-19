@@ -2,6 +2,27 @@ import { Experience } from "../models/experience";
 
 export const experienceData: Experience[] = [
   {
+    title: "Création d'un site vitrine pour un salon de coiffure",
+    subtitle: "Projet perso",
+    paragraphsDescription: {
+      technologies: "Next JS + Tailwind + Sanity",
+      deployment: "Vercel",
+      functionalities:
+        "Présentation du salon, partage des informations utiles et partage de certains travaux réalisés",
+    },
+    image: "./images/sahdcoiff.png",
+    alt: "sahdcoiff",
+    link: "https://sahdcoiff.vercel.app/",
+    githhubLink: "https://github.com/Nico7522/sahdcoiff",
+
+    // [
+    //   "Voici un projet réalisé avec Angular 20 et NodeJS + Supabase.",
+    //   "C'est une simple application dédiée à la gestion de factures pour un garage automobile.",
+    //   "Une connexion est nécéssaire dans un premier temps, on peut ensuite créer/modifier/supprimer de nouveaux clients et de nouvelles factures, ainsi qu'avoir une vue d'ensemble sur différentes données via la page d'acceuil.",
+    //   "Le tout est hébergé sur mon VPS, le back end est exposé via Caddy et le front end servi par un container Nginx.",
+    // ],
+  },
+  {
     title: "Création d'une application Web de gestion de factures pour garage",
     subtitle: "Projet perso",
     paragraphsDescription: {
