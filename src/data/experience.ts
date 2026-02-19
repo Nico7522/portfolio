@@ -53,7 +53,7 @@ export const experienceData: Experience[] = [
     },
     image: "./images/dokkancardmaker.png",
     alt: "Dokkan Card Maker app",
-    link: "https://card-concept-maker-s434.vercel.app/",
+    link: "https://dokkan-card-maker.com",
     githhubLink: "https://github.com/Nico7522/card-concept-maker",
     // [
     //   "Ce projet est une petite application en Angular 19+, utilisant principalement FormsModule qui est le module servant à la création et la gestion des formulaires.",
