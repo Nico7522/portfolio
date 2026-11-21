@@ -2,6 +2,22 @@ import { Experience } from "../models/experience";
 
 export const experienceData: Experience[] = [
   {
+    title:
+      "Développement d'un logiciel de mirroring et d'enregistrement Android",
+    subtitle: "PhonyCut, Projet perso",
+    paragraphsDescription: {
+      technologies: "Rust + Tauri + React + TypeScript",
+      deployment: "GitHub Releases + GitHub Pages",
+      functionalities:
+        "Application Windows permettant de connecter un téléphone Android via USB ou Wi-Fi, d'afficher et contrôler son écran depuis un PC, d'enregistrer des vidéos avec le son et de créer des clips à partir de marqueurs placés pendant l'enregistrement. L'application propose également un assistant de configuration intégré et deux modes de connexion sans fil.",
+    },
+    image: "./images/phonycut.png",
+    alt: "PhonyCut",
+    link: "https://nico7522.github.io/phony-cut/",
+    githhubLink: "https://github.com/Nico7522/phony-cut",
+  },
+
+  {
     title: "Création d'un site vitrine pour un salon de coiffure",
     subtitle: "Projet perso",
     paragraphsDescription: {
